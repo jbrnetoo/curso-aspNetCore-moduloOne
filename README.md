@@ -1,1 +1,1 @@
-# curso-aspNetCore-moduloOne
+# Projeto de estudo do curso Dominando ASP.NET CORE MVC
