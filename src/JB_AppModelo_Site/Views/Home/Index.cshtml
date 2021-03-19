@@ -1,1 +1,6 @@
-﻿Olá
+﻿@using JB_AppModelo_Site.Data 
+@inject IPedidoRepository PedidoRepository; 
+
+Olá
+
+@PedidoRepository.ObterPedido().Id

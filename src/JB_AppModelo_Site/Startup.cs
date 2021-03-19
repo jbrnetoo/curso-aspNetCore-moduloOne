@@ -1,3 +1,4 @@
+using JB_AppModelo_Site.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -26,6 +27,8 @@ namespace JB_AppModelo_Site
             });
 
             services.AddMvc().AddMvcOptions(x => x.EnableEndpointRouting = false);
+
+            services.AddTransient<IPedidoRepository, PedidoRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
