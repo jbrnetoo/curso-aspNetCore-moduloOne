@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using JB_AppModelo_Site.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace JB_AppModelo_Site.Data
 {
@@ -10,5 +11,6 @@ namespace JB_AppModelo_Site.Data
 
         }
 
+        public DbSet<Aluno> Alunos { get; set; }
     }
 }
